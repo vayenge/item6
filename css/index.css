@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.search-index {
+  display: flex;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  max-width: 540px;
+  min-width: 32px;
+  height: 44px;
+  background: #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.search {
+  height: 26px;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 7px 10px;
+  border-radius: 5px;
+  line-height: 24px;
+  color: #ccc;
+  padding-left: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 18px;
+  height: 15px;
+  background: url("../images/search.png") no-repeat;
+  background-size: 18px auto;
+}
+.user {
+  width: 40px;
+  height: 44px;
+  font-size: 12px;
+  text-align: center;
+}
+.user::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../images/user.png") no-repeat;
+  background-size: 28px auto;
+  margin: 1px auto 0;
+  background-position: -2px;
+}
+.focus {
+  padding-top: 44px;
+}
+.focus img {
+  width: 100%;
+}
+.local-nav {
+  height: 64px;
+  background: white;
+  border-radius: 8px;
+  margin: 3px 4px;
+  display: flex;
+}
+.local-nav li {
+  flex: 1;
+}
+.local-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+.local-nav-icon-0 {
+  width: 32px;
+  height: 32px;
+  background: pink;
+  margin-top: 8px;
+  background: url("../images/_出境游.png") no-repeat;
+  background-size: 32px auto;
+}
+.local-nav-icon-1 {
+  width: 32px;
+  height: 32px;
+  background: pink;
+  margin-top: 8px;
+  background: url("../images/周边游.png") no-repeat;
+  background-size: 32px auto;
+}
+.local-nav-icon-2 {
+  width: 32px;
+  height: 32px;
+  background: pink;
+  margin-top: 8px;
+  background: url("../images/美食.png") no-repeat;
+  background-size: 32px auto;
+}
+.local-nav-icon-3 {
+  width: 32px;
+  height: 32px;
+  background: pink;
+  margin-top: 8px;
+  background: url("../images/景点.png") no-repeat;
+  background-size: 32px auto;
+}
+.local-nav-icon-4 {
+  width: 32px;
+  height: 32px;
+  background: pink;
+  margin-top: 8px;
+  background: url("../images/当地_fill.png") no-repeat;
+  background-size: 32px auto;
+}
+nav {
+  border-radius: 8px;
+  margin: 0 4px 3px;
+  overflow: hidden;
+}
+.nav-common {
+  display: flex;
+  height: 88px;
+  background-color: pink;
+}
+.nav-common:nth-child(2) {
+  margin: 3px 0;
+}
+.nav-items {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.nav-items a {
+  flex: 1;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-items a:nth-child(1) {
+  border-bottom: 1px solid #fff;
+}
+.nav-items:nth-child(1) a {
+  border: 0;
+  background: url("../images/佛山地铁.png") no-repeat bottom center;
+  background-size: 160px auto;
+  background-position: 10px 20px;
+}
+.nav-items:nth-child(-n+2) {
+  border-right: 1px solid #f6f6f6;
+}
+.nav-common:nth-child(1) {
+  background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+}
+.nav-common:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+.nav-common:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+.subnav-entry {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 4px;
+  padding: 5px 0;
+}
+.subnav-entry li {
+  flex: 20%;
+}
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subnav-entry-icon {
+  width: 28px;
+  height: 28px;
+  background: pink;
+  margin-top: 4px;
+  background: url("../images/WIFI.png") no-repeat;
+  background-size: 28px auto;
+}
+#_icno0 {
+  background: url("../images/wifi.png");
+  background-size: 28px auto;
+}
+#_icon1 {
+  background: url("../images/安全盾牌.png");
+  background-size: 28px auto;
+}
+#_icon2 {
+  background: url("../images/货币兑换.png");
+  background-size: 28px auto;
+}
+#_icon3 {
+  background: url("../images/购物车.png");
+  background-size: 30px auto;
+}
+#_icon4 {
+  background: url("../images/向导.png");
+  background-size: 30px auto;
+}
+#_icon5 {
+  background: url("../images/自由行.png");
+  background-size: 30px auto;
+}
+#_icon6 {
+  background: url("../images/当地玩乐.png");
+  background-size: 30px auto;
+}
+#_icon7 {
+  background: url("../images/礼品卡.png");
+  background-size: 30px auto;
+}
+#_icon8 {
+  background: url("../images/信用卡.png");
+  background-size: 30px auto;
+}
+#_icon9 {
+  background: url("../images/更多.png");
+  background-size: 30px auto;
+}
+.sales-box {
+  background: white;
+  border: top 1px solid #bbb;
+  margin: 4px;
+}
+.sales-hd {
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.sales-hd h2 {
+  text-indent: -999px;
+  overflow: hidden;
+  position: relative;
+}
+.sales-hd h2::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 20px;
+  width: 79px;
+  height: 40px;
+  background-color: pink;
+  background: url("../images/活动.png") no-repeat;
+}
+.more {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+  border-radius: 8px;
+  padding: 3px 20px 3px 10px;
+  color: #fff;
+}
+.more::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+}
+.row {
+  display: flex;
+}
+.row a {
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+.row a:nth-child(1) {
+  border-right: 1px solid #eee;
+}
+.row a img {
+  width: 100%;
+}
+.oprate {
+  display: flex;
+  border-radius: 8px;
+  background-color: pink;
+}
+.opration {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.action-ico {
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background: pink;
+  margin-top: 4px;
+  background: url("../images/电话.png") no-repeat;
+  background-size: 28px auto;
+}
+.end {
+  height: 2000px;
+}
+#ico-2 {
+  background: url("../images/下载.png") no-repeat;
+  background-size: 28px auto;
+}
+#ico-3 {
+  background: url("../images/我.png") no-repeat;
+  background-size: 28px auto;
+}
+footer {
+  text-align: center;
+}

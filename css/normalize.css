@@ -1,0 +1,97 @@
+.wrap {
+    height: 200px;
+    position: relative;
+    display: flex;
+}
+
+.list {
+    height: 200px;
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+    flex: 1;
+}
+
+.item {
+    margin-top: 45.5px;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+#pic {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* .item:nth-child(1) {
+    background-color: black;
+}
+
+.item:nth-child(2) {
+    background-color: red;
+}
+
+.item:nth-child(3) {
+    background-color: goldenrod;
+}
+
+.item:nth-child(4) {
+    background-color: green;
+}
+
+.item:nth-child(5) {
+    background-color: pink;
+} */
+
+.btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    z-index: 100;
+}
+
+#gopre {
+    left: 0px;
+}
+
+#gonext {
+    right: 0px;
+}
+
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+
+.pointlist {
+    padding-left: 0px;
+    list-style: none;
+    right: 20px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.point {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    float: left;
+    margin-right: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.6);
+
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
