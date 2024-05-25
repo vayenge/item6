@@ -32,6 +32,7 @@ a {
   background: #f6f6f6;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  z-index:2147483647;
 }
 .search {
   height: 26px;
